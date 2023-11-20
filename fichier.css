@@ -1,0 +1,953 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#main{
+  
+    max-width: 1350px;/*largeur maximale*/
+    margin:0 auto;
+    position: relative;
+}
+ul{
+    list-style-type: none;/* enlever les puces*/
+}
+a {
+    text-decoration: none;
+}
+#section1, 
+#section2, 
+#section3, 
+#section4, 
+#section5,
+#section6,
+#section7 {
+    z-index: 1;
+}
+.section1 {
+  width: 1350px;
+  min-height: 10vh;
+  position: relative;
+}
+/*#section1*/ nav {
+  width: 1350px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+  z-index:3;
+}
+nav > div {
+  position: relative;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul a {
+  color: black;
+  font-size: 1rem;
+/*today*/ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.1s ease-in-out;
+  margin-right: 60px;/*espacer les items de la balise a*/
+}
+nav ul a:hover {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#information a:last-child {
+  background: hsl(213, 63%, 43%);
+  padding: 0.7rem 1rem;
+  border-radius: 2.5rem;
+  color: white;
+}
+/*today*/#information a:last-child:hover {
+  font-size: 0.8rem;
+}
+.première { 
+  background: url("image/asset/shutterstock_2337392913.jpg") no-repeat;
+  display: flex;
+  width: 100%;/*largeur de l'image de l'arrière plan*/
+  height: 130vh;/*hauteur de """"*/
+  background-size: cover;/* l'image prend tout l'espace de la section1*/
+}
+.section1 h1{
+    color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;/*permet de mettre un espace en prenant le texte en dessous comme immobile*/
+  font-size: 3rem;
+}
+.section1 p{
+    color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.5rem; 
+}
+.première{
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30%;
+}
+.première:first-of-type a{
+  padding: 0.7rem 1rem;/* a ce niveau j'ai stylisé pour avoir un bouton*/
+  border-radius: 2.5rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 1.5rem;
+  transition: all 0.1s ease-in-out;
+}
+.première:first-of-type a:hover {
+    font-size: 0.8rem;/*grossissement de la taille*/
+}
+.première:first-of-type a:first-of-type {
+    background: hsl(213, 63%, 43%);
+    color: white;
+}
+.première:first-of-type a:last-of-type {
+    background: white;
+    color: rgb(222, 36, 36);
+}
+.première:first-of-type a:last-of-type span{
+font-weight: 700;/*j'ai foncé l'écriture */
+}
+/*.boutonSlide {
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    align-items: center;
+    display: flex;
+}*/
+.second {
+  background: url("image/asset/or-linkedin.jpg") no-repeat;
+  width: 100%;/*largeur de l'image de l'arrière plan*/
+  height: 130vh;/*hauteur de """"*/
+  background-size: cover; 
+  padding: 0 2rem;
+}
+.second>div h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 3rem; 
+    padding-left: 20px;
+    padding-top: 200px;
+}
+
+.second>div p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px ;
+    margin-left: 20px  ;
+}
+.second div{
+    flex-direction: center;
+  justify-content: right;
+}
+.second>div button {
+    border-radius: 2.5rem;
+    padding: 0.7rem 1.5rem;
+    color: white;
+    background: rgb(75, 75, 222);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.1s ease-in-out;
+}
+.section2 {
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    background: hsl(240, 69%, 69%);
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.importance {
+    padding-top: 30px;
+}
+.presentation h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 50px;  
+}
+.presentation h1 u{
+  font-weight: 600
+}
+.presentation img{
+ width: 50%;
+ float: right;
+}
+.importance ul{
+  color: white;
+  margin-left: 30px;
+  padding-top: 10px; 
+}
+.importance ul li {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.importance p{
+  color: rgb(207, 229, 8);
+  font-size: 1.3rem;
+  padding-top: 20px; 
+  margin-left: 20px; 
+}
+.lieu span {
+  display: inline-block;
+  padding-top: 40px;
+  color: white;
+  margin-left: 20px;
+  font-size: 1.2rem;
+} 
+#section3, 
+#section4, 
+#section5,
+#section6,
+#section7 {
+  z-index: 1;
+} /*il faut revoir cette partie également*/
+#section3, 
+#section4, 
+#section5,
+#section6,
+#section7 {
+  width: 100%;
+  min-height: 130vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}/*cette partie également il faut voir*/
+#section3{
+    width: 100%;
+    height: 100%;
+    background: url("image/asset/award-bg.jpg"); 
+}
+#section3 .tip img,
+#section4 .tip img,
+#section5 .tip img,
+#section6 .tip img,
+#section7 .tip img{
+    width: 40%;
+    margin-left: 30%;
+}
+#section3,
+#section4,
+#section5,
+#section6,
+#section7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section3 .tip h2,
+#section4 .tip h3,
+#section5 .tip h3,
+#section6 .tip h3,
+#section7 .tip h3{
+  color: white;
+  margin-left: 25%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;      
+}
+#section3 .cercledesign, 
+#section4 .cercledesign, 
+#section4 .cercledesign,
+#section6 .cercledesign,
+#section7 .cercledesign {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}/*il faut revoir cette partie*/
+.cercledesign a{
+  display: inline-block;
+  border: 1px solid red;
+}
+ .cercledesign .categorie {
+  /*il faut revoir cette partie*/
+  width: max(23%, 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 8rem;
+}
+ .cercledesign .categorie .Circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid hsl(45, 100%, 50%);
+  background-color: white;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: hwb(0 1% 99%);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+#section3 .cercledesign .categorie .Circle:hover {
+  top: 1rem;
+  width: 240px;
+  height: 240px;
+}
+#section3 .cercledesign .categorie img {
+  /*width: 250px;*/
+  width: 100%;/*revoir cette partie*/
+  margin-left: 20px;
+}
+#section4 ,
+#section5 ,
+#section6 ,
+#section7 {
+  width: 100%;
+  height: 100%;
+  background: url("image/asset/award-vote1.jpg"); 
+}
+#section4 .jeune,
+#section5 .jeune,
+#section6 .jeune,
+#section7 .jeune{
+  display: flex;
+ justify-content: space-between;
+ padding-top: 50px;
+}
+#section4 .categories,
+#section5 .categories,
+#section6 .categories,
+#section7 .categories{
+border-radius: 50%;
+width: 270px;
+height: 270px;
+border: 4px solid white;
+margin-left: 20px;
+}
+#section4 .top,
+#section5 .top,
+#section6 .top,
+#section7 .top{
+border-radius: 50%;
+width: 220px;
+height: 220px;
+border: 6px solid hsl(45, 100%, 50%);
+margin: auto;
+margin-top: 20px;
+}
+#section4 .candidats:first-child .categories .top{
+background:url("image/asset/photo_nomine/producteur_contenu/divine.jpg") no-repeat;
+background-size: cover;
+}
+#section4 .candidats:nth-child(2) .categories .top{
+  background:url("image/asset/photo_nomine/producteur_contenu/godwin.JPG") no-repeat;
+  background-size: cover;
+}
+#section4 .candidats:nth-child(3) .categories .top{
+    background:url("image/asset/photo_nomine/producteur_contenu/camille.JPG") no-repeat;
+    background-size: cover;
+}
+#section4 .candidats:nth-child(4) .categories .top{
+      background:url("image/asset/photo_nomine/producteur_contenu/audrey.jpg") no-repeat;
+      background-size: 130% 220%;
+}
+#section5 .candidats:first-child .categories .top{
+  background:url("image/asset/PHOTOS DES NOMINES/CREATEURS DE CONTENUS RHMOTIVATIONCONSULTANT/MARIE ELLA KOUAKOU.jpg") no-repeat;
+  background-size: 100% 150%;
+  }
+  #section5 .candidats:nth-child(2) .categories .top{
+    background:url("image/asset/PHOTOS DES NOMINES/CREATEURS DE CONTENUS RHMOTIVATIONCONSULTANT/IMG_4312.JPG") no-repeat;
+    background-size: 110% 160%;
+  }
+  #section5 .candidats:nth-child(3) .categories .top{
+      background:url("image/asset/PHOTOS DES NOMINES/CREATEURS DE CONTENUS RHMOTIVATIONCONSULTANT/Manon Arielle DEBLEZA.jpg") no-repeat;
+      background-size: 110% 250%;
+  }
+  #section5 .candidats:nth-child(4) .categories .top{
+        background:url("image/asset/PHOTOS DES NOMINES/CREATEURS DE CONTENUS RHMOTIVATIONCONSULTANT/RACHIDATH BOURAIMA.jpg") no-repeat;
+        background-size: 100% 260%;
+  }
+  #section6 .candidats:first-child .categories .top{
+    background:url("image/asset/PHOTOS DES NOMINES/COACH  EXPERTS/image-5.jpg") no-repeat;
+    background-size: cover;
+    }
+    #section6 .candidats:nth-child(2) .categories .top{
+      background:url("image/asset/PHOTOS DES NOMINES/COACH  EXPERTS/Vincent KADIO.jpg") no-repeat;
+      background-size: cover;
+    }
+    #section6 .candidats:nth-child(3) .categories .top{
+        background:url("image/asset/PHOTOS DES NOMINES/COACH  EXPERTS/363295749_2755717921237862_5867812130546627988_n.jpg") no-repeat;
+        background-size: 110% 230%;
+    }
+    #section6 .candidats:nth-child(4) .categories .top{
+          background:url("image/asset/PHOTOS DES NOMINES/COACH  EXPERTS/FrВdВrick Williams KINGUE.jpg") no-repeat;
+          background-size: 100% 210%;
+    }
+    #section7 .candidats:first-child .categories .top{
+      background:url("image/asset/PHOTOS DES NOMINES/CONTRIBUTEURS LINKEDIN/GRACE ADJE.jpg") no-repeat;
+      background-size: 100% 200%;
+      }
+      #section7 .candidats:nth-child(2) .categories .top{
+        background:url("image/asset/PHOTOS DES NOMINES/CONTRIBUTEURS LINKEDIN/RAISSA KOUADIO.jpg") no-repeat;
+        background-size: cover;
+      }
+      #section7 .candidats:nth-child(3) .categories .top{
+          background:url("image/asset/PHOTOS DES NOMINES/CONTRIBUTEURS LINKEDIN/YASMINE SABAHI (3).jpg") no-repeat;
+          background-size: 100% 180%;
+      }
+      #section7 .candidats:nth-child(4) .categories .top{
+            background:url("image/asset/PHOTOS DES NOMINES/CONTRIBUTEURS LINKEDIN/JOSEPH N'DRI.jpg") no-repeat;
+            background-size: 100% 210%;
+      }
+#section4 .candidats .candidatinfo,
+#section5 .candidats .candidatinfo,
+#section6 .candidats .candidatinfo,
+#section7 .candidats .candidatinfo{
+   width: 300px;
+   height: 180px;
+   margin-left: 80px;
+   padding-top: 15px;
+   padding-left: 10px;
+   padding: 10px;
+   align-items: center;
+   justify-content: center;
+}
+#section4 .candidats .candidatinfo h2,
+#section5 .candidats .candidatinfo h2,
+#section6 .candidats .candidatinfo h2,
+#section7 .candidats .candidatinfo h2{
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+
+}
+#section4 .nbrvote,
+#section5 .nbrvote,
+#section6 .nbrvote,
+#section7 .nbrvote{
+  border-radius: 4rem;
+  border: 0.7px solid white;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+#section4 .btnvote,
+#section5 .btnvote,
+#section6 .btnvote,
+#section7 .btnvote{
+  background: yellow;
+  color: white;
+  border-radius: 4rem;
+  border: 1px solid white;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.872), rgba(19, 1, 1, 0.817)100%), url('asset/LOGO THE GROUP blanc.png');
+  /* background: rgb(3,3,24);
+  background: linear-gradient(90deg, rgba(3,3,24,1) 0%, rgba(67,8,25,1) 100%); */
+  background-size: 80% ;
+  background-position:  50% 40%;
+  background-color:black;
+}
+.logo-footer{
+ width: 20%; 
+ min-height: 20%;
+ margin-left: 45px;
+}
+.mes-contacts{
+  color: white;
+}
+.les-icons{
+  display: flex;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  padding: 3px;
+  overflow: hidden;
+  margin: 2px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 49px 100px;
+}
+.bloc-informations{
+  margin-top: -10%;
+}
+.bloc-informations h3{
+ color: red;
+ margin-bottom: 25px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size: 25px;
+ opacity: 0.7;
+ position: relative;
+}
+.bloc-informations ul li{
+ padding: 10px 0; 
+ list-style-type: none;
+}
+.bloc-informations ul li a{
+text-decoration: none;
+font-size: 25px;
+opacity: 0.7;
+transition: 10;
+color: white;
+}
+.bloc-informations input{
+border:none;
+width: 240px;
+height: 40px;
+display:block;
+margin: 14px 0;
+border-radius: 3px;
+font-size: 20px;
+padding-left: 20px;
+}
+.bloc-informations .submit-input{
+  background-color: red;
+  height: 30px;
+}
+.block-Fin{
+  display: flex;
+  justify-content: space-between;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.active {
+  background-color: #717171;
+}
+.oCircle {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {display: none;}
+
+
+
+@media only screen and (min-width:1000px) {
+  .mob {
+    display: none;
+  }
+  /*#sectionOne*/ nav {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+  }
+  nav ul {
+    justify-content: flex-end;
+  }
+  nav ul a {
+    margin-left: 1.5rem;
+  }
+  #infos a:last-child {
+    margin-left: 1rem;
+  }
+  #sectionOne h1 {
+    font-size: 3.2rem;
+  }
+  #sectionOne p {
+    font-size: 1.5rem;
+  }
+  #second {
+    background-size: 100% 100%;
+  }
+  #second > div:first-child {
+    width: 50%;
+    padding-right: 1.5rem;
+  }
+  #sectionTwo {
+    padding: 3rem 2.5rem;
+  }
+  #sectionTwo h1 {
+    font-size: 3.2rem;
+  }
+  #sectionTwo .text {
+    max-width: 60%;
+  }
+  #sectionTwo .illus {
+    width: 40%;
+    overflow: hidden;
+  }
+  #sectionTwo .text > div:last-child {
+    display: flex;
+    align-items: center;
+  }
+  #sectionThree .top h1, 
+  #sectionFour .top h1, 
+  #sectionFive .top h1, 
+  #sectionSix .top h1, 
+  #sectionSeven .top h1 {
+    font-size: 1.8rem;
+  }
+  #sectionFour .top h1::before, 
+  #sectionFive .top h1::before, 
+  #sectionSix .top h1::before, 
+  #sectionSeven .top h1::before {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: hsl(45, 100%, 50%);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(calc(-1 * (100% + 1rem)), -50%); 
+  }
+  #sectionFour .top h1::after, 
+  #sectionFive .top h1::after, 
+  #sectionSix .top h1::after, 
+  #sectionSeven .top h1::after {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: hsl(45, 100%, 50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(calc(1 * (100% + 1rem)), -50%); 
+  }
+  #sectionThree .top img, 
+  #sectionFour .top img, 
+  #sectionFive .top img, 
+  #sectionSix .top img,
+  #sectionSeven .top img {
+    width: 35%;
+  }
+  #sectionThree .bottom, 
+  #sectionFour .bottom, 
+  #sectionFive .bottom, 
+  #sectionSix .bottom, 
+  #sectionSeven .bottom {
+    justify-content: center;
+    align-items: center;
+  }
+  #sectionFour .bottom .candidate, 
+  #sectionFive .bottom .candidate, 
+  #sectionSix .bottom .candidate, 
+  #sectionSeven .bottom .candidate {
+    width: max(23%, 300px);
+    margin-bottom: 5rem;
+  }
+  footer > div {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1000px) {
+ /* .mob {
+    display: none;
+  }*/
+  /*#sectionOne*/ nav {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+  }
+  nav ul {
+    justify-content: flex-end;
+  }
+  nav ul a {
+    margin-left: 1.5rem;
+  }
+  #information a:last-child {
+    margin-left: 1rem;
+  }
+  .section1 h1 {
+    font-size: 3.2rem;
+  }
+  .section1 p {
+    font-size: 1.5rem;
+  }
+  .second {
+    background-size: 100% 100%;
+  }
+  .second > div:first-child {
+    width: 50%;
+    padding-right: 1.5rem;
+  }
+  .section2 {
+    padding: 3rem 2.5rem;
+  }
+  .section2 h1 {
+    font-size: 3.2rem;
+  }
+  .section2 .presentation {
+    max-width: 60%;
+  }
+  .section2 img {
+    width: 40%;
+    overflow: hidden;
+  }
+  .section2 .presentation > div:last-child {
+    display: flex;
+    align-items: center;
+  }
+  #section3 .tip h1, 
+  #section4 .tip h1, 
+  #section5 .tip h1, 
+  #section6 .tip h1, 
+  #sectionS7 .tip h1 {
+    font-size: 1.8rem;
+  }
+  #section4 .tip h1::before, 
+  #section5 .tip h1::before, 
+  #section6 .tip h1::before, 
+  #section7 .tip h1::before {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: hsl(45, 100%, 50%);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(calc(-1 * (100% + 1rem)), -50%); 
+  }
+  #section4 .tip h1::after, 
+  #section5 .tip h1::after, 
+  #section6 .tip h1::after, 
+  #section7 .tip h1::after {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    background-color: hsl(45, 100%, 50%);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(calc(1 * (100% + 1rem)), -50%); 
+  }
+  #section3 .tip img, 
+  #section4 .tip img, 
+  #section5 .tip img, 
+  #section6 .tip img,
+  #section7 .tip img {
+    width: 35%;
+  }
+  #section3 .cercledesign{
+    justify-content: center;
+    align-items: center;
+  } 
+  #section4 .jeune, 
+  #section5 .jeune, 
+  #section6 .jeune, 
+  #section7 .jeune {
+    justify-content: center;
+    align-items: center;
+  }
+  #section4 .jeune .candidate, 
+  #section5 .jeune .candidate, 
+  #section6 .jeune .candidate, 
+  #section7 .jeune .candidate {
+    width: max(23%, 300px);
+    margin-bottom: 5rem;
+  }
+  footer > div {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:999px) {
+  /*#sectionOne*/ nav {
+    padding: 0 1em;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #toggleMenu {
+    cursor: pointer;
+  }
+  nav div i {
+    font-size: 1.5rem;
+    color: hsl(213, 63%, 43%);
+  }
+  nav ul {
+    display: none;
+    width: calc(99vw);/*calc(100vw - 2rem);*/
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: -1em;
+    background: rgba(255, 255, 255, 0.349);
+    padding: 1rem;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  nav ul a:not(:last-child) {
+    margin-bottom: 0.7rem;
+  }
+  #section1 h1, #section1 p {
+    text-align: center;
+  }
+  .section1 h1 {
+    font-size: 2rem;
+  }
+  .section1 p {
+    font-size: 1.2rem;
+  }
+  .première > div:first-of-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .première > div:first-of-type a:first-of-type {
+    margin-bottom: 1.5rem;
+  } 
+  .second {
+    background-size: cover;
+  }
+  .second > div:first-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section2 {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+  }
+  .section2 h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .section2 img {
+    margin: 0 auto;
+    max-width: min(100%, 30rem);
+    margin-bottom: 2rem;
+  }
+  .section2 .presentation > div:last-child > div {
+    margin-bottom: 1.5rem;
+  }
+  .section2 li {
+    font-size: 1rem;
+  }
+  #section3 .tip h1, 
+  #section4 .tip h1, 
+  #section5 .tip h1, 
+  #section6 .tip h1,
+  #section7 .tip h1, {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  #section3 .tip img, 
+  #section4 .tip img, 
+  #section5 .tip img, 
+  #section6 .tip img, 
+  #section7 .tip img {
+    width: max(90%, 225px)
+  }
+  #section3 .cercledesign{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+  } 
+  #section4 .jeune, 
+  #section5 .jeune, 
+  #section6 .jeune, 
+  #section7 .jeune {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #section4 .jeune .candidate, 
+  #section5 .jeune .candidate, 
+  #section6 .jeune .candidate, 
+  #section7 .jeune .candidate {
+    width: min(90%, 300px);
+    margin-bottom: 5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
